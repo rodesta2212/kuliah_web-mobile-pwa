@@ -1,0 +1,46 @@
+/* main.css */
+
+.container {
+  background: #eee;
+  overflow: auto;
+}
+
+.container .col {
+    width: 90%;
+    padding: 30px 3.15% 0;
+    float: left;
+}
+.container .col1 {
+    width: 27%;
+    padding: 30px 3.15% 0;
+    float: left;
+}
+.container .col2 {
+    width: 40%;
+    padding: 30px 3.15% 0;
+    float: left;
+}
+
+/* TODO 3 - style the page */
+
+/* TODO 4 - use media query */
+@media	screen	and	(max-width:	48rem)	{
+		.container	.col	{
+				width:	95%;
+		}
+		.container	.col1	{
+				width:	90%;
+		}
+		.container	.col2	{
+				width:	90%;
+		}
+}
+
+/* TODO 3 - style the page */
+
+/* TODO 4 - use media query */
+
+/* TODO 5.2 - use flexbox */
+
+/* TODO 5.4 - use media query with Flexbox*/
+

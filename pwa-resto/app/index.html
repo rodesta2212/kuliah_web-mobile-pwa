@@ -1,0 +1,91 @@
+<!--
+Copyright 2016 Google Inc.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Set the viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+  <!-- Set character encoding -->
+  <meta charset="utf-8">
+
+  <!-- Set title -->
+  <title>Ricky Resto</title>
+
+  <!-- Request fonts and styles -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="style/main.css" />
+  <script type="text/javascript" src="js/idb.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+
+</head>
+
+<body>
+
+    <section id="post">
+    <h1>Ricky Resto</h1>
+      <picture>
+        <source media="(min-width: 750px)" srcset="images/gudeg.jpg 2x, images/gudeg.jpg" />
+        <source media="(min-width: 500px)" srcset="images/gudeg.jpg" />
+        <img src="images/gudeg.jpg" alt="Gudeg">
+      </picture>
+
+      <picture>
+        <source media="(min-width: 750px)" srcset="images/gado-gado.jpg 2x, images/gado-gado.jpg" />
+        <source media="(min-width: 500px)" srcset="images/gado-gado.jpg" />
+        <img src="images/gado-gado.jpg" alt="Gado - Gado">
+      </picture>
+
+      <picture>
+        <source media="(min-width: 750px)" srcset="images/sate.jpg 2x, images/sate.jpg" />
+        <source media="(min-width: 500px)" srcset="images/sate.jpg" />
+        <img src="images/sate.jpg" alt="Sate">
+      </picture>
+
+
+      </br><br>
+
+    </section>
+    
+<footer>
+
+    <div id="social">
+      <a href="#">Twitter</a>
+      <a href="#">Facebook</a>
+      <a href="#">Google+</a>
+      <a href="#">Digg</a>
+    </div>
+
+  </footer>
+
+  <script>
+
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('my-service-worker.js')
+        .then(function(registration) {
+          console.log('Service Worker registration successful with scope: ',
+          registration.scope);
+        })
+        .catch(function(err) {
+          console.log('Service Worker registration failed: ', err);
+        });
+    }
+
+  </script>
+
+</body>
+</html>
