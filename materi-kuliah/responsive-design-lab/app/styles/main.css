@@ -1,0 +1,57 @@
+@import "compass/css3";
+
+
+.c {
+  padding: 1em;
+  max-width: 60em;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+
+@media all and (min-width: 40em) {
+  .c {
+     font-size: 120%;
+      line-height: 1.5;
+  }
+  h2 {
+     font-size: 3em; 
+  }
+  h3 {
+     font-size: 2.5em; 
+  }
+}
+
+@media all and (min-width: 55em) {
+  .c {
+     font-size: 130%;
+      line-height: 1.7;
+  }
+#kolom1{
+	width: 100%;
+}
+#kolom2{
+	width: 23%;
+}
+#kolom3{
+	width: 23%;
+}
+#kolom4{
+	width: 23%;
+}
+#kolom5{
+	width: 100%;
+}
+#kolom6{
+	width: 43%;
+}
+#kolom7{
+	width: 43%;
+}
+#kolom8{
+	width: 100%;
+}
+}
